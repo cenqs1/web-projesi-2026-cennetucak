@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolyo | Projeler</title>
+  <title>Portfolyo | İletişim</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <div id="particles"></div>
 
   <header>
@@ -14,45 +15,46 @@
     <nav>
       <a href="index.html">Anasayfa</a>
       <a href="about.html">Hakkımda</a>
-      <a href="projects.html" class="active">Projeler</a>
-      <a href="contact.html">İletişim</a>
+      <a href="projects.html">Projeler</a>
+      <a href="contact.html" class="active">İletişim</a>
     </nav>
   </header>
 
   <section class="page-section">
     <div class="content-box">
-      <h2 class="section-title">Projelerim</h2>
-      <p class="section-subtitle">Geliştirdiğim bazı örnek projeler burada yer alıyor.</p>
+      <h2 class="section-title">İletişim</h2>
+      <p class="section-subtitle">
+        Benimle iletişime geçmek için aşağıdaki formu kullanabilirsin.
+      </p>
 
-      <div class="card-grid">
-        <div class="card">
-          <h3>Deprem Acil Durum Sistemi</h3>
-          <p>Deprem anında kayıtlı kişilere canlı konum göndermeyi hedefleyen proje fikri.</p>
-          <div class="project-links">
-            <a href="#" class="btn btn-secondary">Detay</a>
-          </div>
+      <form action="https://formsubmit.co/SENINMAILIN@gmail.com" method="POST" class="contact-form">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_subject" value="Portfolyo sitesinden yeni mesaj">
+
+        <div class="form-group">
+          <label>Ad Soyad</label>
+          <input type="text" name="name" placeholder="Adınızı girin" required>
         </div>
 
-        <div class="card">
-          <h3>Java Swing Uygulaması</h3>
-          <p>Masaüstü arayüz tasarımlarını içeren Java Swing tabanlı uygulama çalışmaları.</p>
-          <div class="project-links">
-            <a href="#" class="btn btn-secondary">Detay</a>
-          </div>
+        <div class="form-group">
+          <label>E-posta</label>
+          <input type="email" name="email" placeholder="E-posta adresinizi girin" required>
         </div>
 
-        <div class="card">
-          <h3>Portfolyo Web Sitesi</h3>
-          <p>Koyu tonlarda tasarlanmış, animasyonlu ve dikkat çekici kişisel tanıtım sitesi.</p>
-          <div class="project-links">
-            <a href="#" class="btn btn-secondary">Detay</a>
-          </div>
+        <div class="form-group">
+          <label>Mesaj</label>
+          <textarea name="message" placeholder="Mesajınızı yazın" required></textarea>
         </div>
-      </div>
+
+        <button type="submit" class="btn btn-primary">Gönder</button>
+      </form>
     </div>
   </section>
 
-  <footer>© 2026 C. UÇAK Portfolyo | Projeler</footer>
+  <footer>
+    © 2026 C. UÇAK Portfolyo | İletişim
+  </footer>
 
   <script src="anim.js"></script>
 </body>
